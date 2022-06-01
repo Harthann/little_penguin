@@ -2,6 +2,8 @@
 #include <linux/kernel.h>       /* Needed for KERN_INFO */
 #include <linux/init.h>         /* Needed for the macros */
 
+MODULE_LICENSE("GPL");
+
 static int __init hello_start(void)
 {
 printk(KERN_INFO "Loading hello module...\n");
