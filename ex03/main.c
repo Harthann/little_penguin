@@ -26,7 +26,7 @@ int my_init(void)
 	int x = 10;
 
 	x = do_work(&x, x);
-	return x;
+	return 0;
 }
 
 void my_exit(void)
