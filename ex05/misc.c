@@ -20,7 +20,7 @@ static ssize_t misc_read(struct file *filp, char __user *buf, size_t count, loff
 
 static ssize_t misc_write(struct file *filp, const char __user *buf, size_t count, loff_t *f_pos)
 {
-	char specified_msg[count];
+	char specified_msg[sizeof(message)];
 	ssize_t retval = -EINVAL;
 
 	if (count != message_length)
