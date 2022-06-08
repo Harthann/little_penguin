@@ -10,11 +10,11 @@ MODULE_LICENSE("GPL");
 
 
 /* table of devices that work with this driver */
-static struct usb_device_id skel_table [] = {
+static struct usb_device_id skel_table[] = {
 	{ .driver_info = 42},
 	{ }                      /* Terminating entry */
 };
-MODULE_DEVICE_TABLE (usb, skel_table);
+MODULE_DEVICE_TABLE(usb, skel_table);
 
 static int skel_probe(struct usb_interface *interface, const struct usb_device_id *id)
 {
@@ -35,8 +35,7 @@ static int __init usb_skel_init(void)
 	/* register this driver with the USB subsystem */
 	result = usb_register(&skel_driver);
 	if (result < 0) {
-		pr_info("usb_register failed for the "__FILE__ "driver."
-				"Error number %d", result);
+		pr_info("usb_register failed for the "__FILE__ "driver.Error number %d", result);
 		return -1;
 	}
 
