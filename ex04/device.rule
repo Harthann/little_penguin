@@ -1,2 +1,2 @@
-ACTION=="add", SUBSYSTEM=="usb", RUN+="sudo /usr/sbin/insmod /home/fgf/Documents/42/little_penguin/ex04/usb_mod.ko > /home/fgf/Documents/42/little_penguin/ex04/logs"
-ACTION=="add", SUBSYSTEM=="usb", RUN+="echo It fucking don't works > /tmp/fuckudev"
+ACTION=="add", SUBSYSTEM=="usb",  ATTRS{idVendor}=="80ee", ATTRS{idProduct}=="0021", RUN+="/usr/sbin/insmod /root/little_penguin/ex04/usb_mod.ko"
+ACTION=="remove", SUBSYSTEM=="usb",  ATTRS{idVendor}=="80ee", ATTRS{idProduct}=="0021", RUN+="/usr/sbin/rmmod /root/little_penguin/ex04/usb_mod.ko"

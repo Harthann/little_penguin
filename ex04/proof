@@ -1,0 +1,11 @@
+echo 1-1 > /sys/bus/usb/drivers/usb/unbind
+[ 1605.954618] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:0c.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0005/input/input10
+[ 1605.955402] hid-generic 0003:80EE:0021.0005: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:0c.0-1/input0
+[ 1648.087770] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:0c.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0006/input/input11
+[ 1648.087882] hid-generic 0003:80EE:0021.0006: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:0c.0-1/input0
+[ 1648.094721] Hello device
+[ 1714.815533] Goodbye device
+[ 1727.575385] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:0c.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0007/input/input12
+[ 1727.575520] hid-generic 0003:80EE:0021.0007: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:0c.0-1/input0
+[ 1727.580225] Hello device
+[ 1729.455352] Goodbye device
